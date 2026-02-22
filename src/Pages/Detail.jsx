@@ -163,7 +163,7 @@ function Detail() {
                     -
                   </button>
 
-                  <span className="text-lg font-semibold">{qty}</span>
+                  <span className="text-lg font- semibold">{qty}</span>
 
                   <button
                     onClick={increase}

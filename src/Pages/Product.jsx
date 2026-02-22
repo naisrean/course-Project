@@ -1,12 +1,9 @@
 import React from "react";
-import MenuProduct from "../Components/MenuProduct";
 
 function Product() {
   return (
     <>
-    <MenuProduct/>
-    
-    
+      <h1>hello</h1>
     </>
   );
 }
