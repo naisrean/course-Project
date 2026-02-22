@@ -120,7 +120,7 @@ function Detail() {
   return (
     <>
       <div className="h-full bg-gray-100 flex justify-center items-center p-6">
-        <div className="bg-white shadow-2xl rounded-3xl grid md:grid-cols-2 gap-10 p-10  w-[60%]">
+        <div className="bg-white shadow-2xl rounded-3xl grid md:grid-cols-2 gap-4 md:gap-10 p-5 w-[100%]  md:w-[60%]">
           <div>
             <img
               src={product.img}
@@ -128,15 +128,17 @@ function Detail() {
               className="w-full rounded-2xl"
             />
           </div>
-          <div className="flex flex-col justify-between mt-2">
+          <div className="flex flex-col justify-between md:mt-2">
             <div>
-              <h1 className="text-4xl font-bold mb-4">{product.name}</h1>
-              <p className="text-gray-600 mb-6">{product.description}</p>
-              <h2 className="text-3xl font-bold text-green-600 mb-6">
+              <h1 className="md:text-4xl text-2xl font-bold md:mb-4">
+                {product.name}
+              </h1>
+              <p className="text-gray-600 md:mb-6">{product.description}</p>
+              <h2 className="text-3xl font-bold text-green-600 md:mb-6">
                 {product.price}
               </h2>
-              <div className="mb-6">
-                <p className="font-semibold mb-5">Select Size:</p>
+              <div className="md:mb-6">
+                <p className="font-semibold md:mb-5">Select Size:</p>
                 <div className="flex gap-3">
                   {["S", "M", "L", "XL"].map((s) => (
                     <button

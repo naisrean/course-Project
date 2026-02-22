@@ -4,6 +4,7 @@ import "swiper/css/effect-cards";
 import Card from "../Components/Card";
 import Footer from "../Components/Footer";
 import Herosection from "../Components/Herosection";
+import { Link } from "react-router-dom";
 function Home() {
   const card = [
     {
@@ -156,7 +157,15 @@ function Home() {
           ))}
         </div>
       </div>
-<Footer/>
+      <Link
+        to={"/product"}
+        className="w-[95%] flex justify-center mt-10 m-auto"
+      >
+        <button className="w-[100px] h-[40px] rounded-lg text-lg bg-[#5292fb]">
+          View all
+        </button>
+      </Link>
+      <Footer />
     </>
   );
 }
