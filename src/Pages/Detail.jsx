@@ -5,7 +5,6 @@ function Detail() {
   const { id } = useParams();
   const [qty, setQty] = useState(0);
   const [size, setSize] = useState();
-
   const products = [
     {
       id: 1,
@@ -16,7 +15,7 @@ function Detail() {
     },
     {
       id: 2,
-      img: "https://i.pinimg.com/736x/b5/36/00/b5360045dde6862d13dce461648b6d0f.jpg",
+      img: "https://i.pinimg.com/1200x/cd/48/de/cd48dee03d61c03f0ac336167e94daf3.jpg",
       name: "AYR XL The Deep End",
       price: "35.00$",
       description: "Premium cotton shirt for everyday style.",
@@ -109,8 +108,49 @@ function Detail() {
       description:
         "Stylish everyday bag with spacious interior. Lightweight, durable, and perfect for daily use.",
     },
+    {
+      id: 14,
+      img: "https://i.pinimg.com/1200x/91/b2/d6/91b2d6cd53d27dfa6a1ffe8829467b85.jpg",
+      name: "wayfarer glasses",
+      price: "15.00$ ",
+    },
+    {
+      id: 15,
+      img: "https://i.pinimg.com/1200x/81/b6/4b/81b64bdb41c75c4aa34024b81448b4d6.jpg",
+      name: "Fashion Men's Baggy Jeans",
+      price: "23.00$ ",
+    },
+    {
+      id: 16,
+      img: "https://i.pinimg.com/1200x/81/b6/4b/81b64bdb41c75c4aa34024b81448b4d6.jpg",
+      name: "Baggy Jeans",
+      price: "15.00$ ",
+    },
+    {
+      id: 17,
+      img: "https://i.pinimg.com/1200x/12/f7/6f/12f76f02a816428552f66061836fa945.jpg",
+      name: "Bag",
+      price: "13.00$ ",
+    },
+    {
+      id: 18,
+      img: "https://i.pinimg.com/736x/08/ac/eb/08aceb5628caa3c677427ee329b76a9f.jpg",
+      name: "Glasses man",
+      price: "30.00$ ",
+    },
+    {
+      id: 19,
+      img: "https://i.pinimg.com/736x/5e/54/47/5e544798fafeb92874da050f1398ab95.jpg",
+      name: "hat",
+      price: "8.45$ ",
+    },
+    {
+      id: 20,
+      img: "https://i.pinimg.com/736x/66/8c/a0/668ca05ed2e291b6f1dc7fd45422ac5a.jpg",
+      name: "Shirt",
+      price: "24.45$ ",
+    },
   ];
-
   const product = products.find((p) => p.id === parseInt(id));
   const increase = () => setQty(qty + 1);
   const decrease = () => {
