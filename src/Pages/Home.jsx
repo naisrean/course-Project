@@ -219,7 +219,7 @@ function Home() {
       <Herosection />
       <div className="md:w-[95%] m-auto mt-10">
         <div className="flex items-center justify-center gap-3 pl-3">
-          <h1 className="text-2xl font-bold">Products</h1>
+          <h1 className="text-2xl font-bold">Products ❤️</h1>
         </div>
       </div>
       <div className="w-[95%] m-auto grid justify-center">
