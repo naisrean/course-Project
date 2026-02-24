@@ -218,12 +218,12 @@ function Home() {
       </div> */}
       <Herosection />
       <div className="md:w-[95%] m-auto mt-10">
-        <div className="flex items-center gap-3 pl-3">
+        <div className="flex items-center justify-center gap-3 pl-3">
           <h1 className="text-2xl font-bold">Products</h1>
         </div>
       </div>
-      <div className="w-[95%] m-auto">
-        <div className="grid justify-center items-center md:grid-cols-2 xl:grid-cols-4 gap-3">
+      <div className="w-[95%] m-auto grid justify-center">
+        <div className="grid justify-center items-center md:grid-cols-2 md:gap-10 xl:grid-cols-4 gap-3">
           {card.slice(0, 8).map((c) => (
             <Card id={c.id} img={c.img} name={c.name} price={c.price} />
           ))}

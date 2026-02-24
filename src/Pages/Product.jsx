@@ -157,7 +157,7 @@ function Product() {
 
   return (
     <>
-      <div className="w-[95%] m-auto">
+      <div className="w-[95%] m-auto grid justify-center">
         {/* Search */}
         <div className="w-full flex justify-center  mb-6">
           <input
@@ -171,7 +171,7 @@ function Product() {
 
         {/* Product Grid */}
 
-        <div className="grid justify-center items-center md:grid-cols-2 xl:grid-cols-4 gap-3">
+        <div className="grid justify-center items-center md:grid-cols-2 md:gap-10 xl:grid-cols-4 gap-3">
           {filteredProducts.length > 0 ? (
             filteredProducts.map((c) => (
               <Card

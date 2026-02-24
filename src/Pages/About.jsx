@@ -78,7 +78,7 @@ const About = () => {
           to={"/product"}
           className="w-[95%] flex justify-center mt-10 m-auto"
         >
-          <button className="w-[100px] h-[40px] rounded-lg text-lg bg-[#5292fb]">
+          <button className="w-[200px] h-[40px] rounded-lg text-lg bg-[#6ba0f6] hover:bg-[#84b2fc]">
             Shoping
           </button>
         </Link>
